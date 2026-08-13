@@ -1,0 +1,21 @@
+# Results and working files
+results/
+results_comparison/
+cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# PyInstaller
+build/
+dist/
+
+# Operating systems
+.DS_Store
+Thumbs.db

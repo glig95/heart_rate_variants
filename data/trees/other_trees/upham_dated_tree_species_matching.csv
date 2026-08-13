@@ -1,0 +1,154 @@
+genome_id,our_name,tree_name,how_matched
+HLaciJub3,Acinonyx jubatus,Acinonyx_jubatus,exact
+HLailMel3,Ailuropoda melanoleuca,Ailuropoda_melanoleuca,exact
+HLailFul2,Ailurus fulgens,Ailurus_fulgens,exact
+HLalcAlc1,Alces alces,Alces_alces,exact
+HLaloPal1,Alouatta palliata,Alouatta_palliata,exact
+HLantFla1,Antechinus flavipes,Antechinus_flavipes,exact
+HLapoSyl2,Apodemus sylvaticus,Apodemus_sylvaticus,exact
+HLarcGaz2,Arctocephalus gazella,Arctocephalus_gazella,exact
+HLarvNil1,Arvicanthis niloticus,Arvicanthis_niloticus,exact
+HLatePan1,Ateles paniscus,Ateles_paniscus,exact
+HLbalMus2,Balaenoptera musculus,Balaenoptera_musculus,exact
+HLbisBisBis2,Bison bison bison,Bison_bison,subspecies matched to its species
+HLbosFro1,Bos frontalis,Bos_frontalis,exact
+HLbosGau1,Bos gaurus,Bos_gaurus,exact
+HLbosGru1,Bos grunniens,Bos_grunniens,exact
+bosTau9,Bos taurus,Bos_taurus,exact
+HLbubBub2,Bubalus bubalis,Bubalus_arnee,"domestic water buffalo, listed under its wild ancestor"
+calJac4,Callithrix jacchus,Callithrix_jacchus,exact
+HLcamBac1,Camelus bactrianus,Camelus_bactrianus,exact
+HLcamDro2,Camelus dromedarius,Camelus_dromedarius,exact
+HLcanLat1,Canis latrans,Canis_latrans,exact
+canFam4,Canis lupus familiaris,Canis_lupus,subspecies matched to its species
+HLcapHir2,Capra hircus,Capra_hircus,exact
+HLcapSib1,Capra sibirica,Capra_sibirica,exact
+HLcapCap1,Capreolus capreolus,Capreolus_capreolus,exact
+HLcasCan3,Castor canadensis,Castor_canadensis,exact
+HLcavPor4,Cavia porcellus,Cavia_porcellus,exact
+HLcebAlb2,Cebus albifrons,Cebus_albifrons,exact
+HLcerSimCot2,Ceratotherium simum cottoni,Ceratotherium_simum,subspecies matched to its species
+HLcerEla2,Cervus elaphus,Cervus_elaphus,exact
+HLcheMed2,Cheirogaleus medius,Cheirogaleus_medius,exact
+HLchlAet1,Chlorocebus aethiops,Chlorocebus_aethiops,exact
+HLchoDid2,Choloepus didactylus,Choloepus_didactylus,exact
+HLchrBra1,Chrysocyon brachyurus,Chrysocyon_brachyurus,exact
+HLcriGam1,Cricetomys gambianus,Cricetomys_gambianus,exact
+HLdasPun1,Dasyprocta punctata,Dasyprocta_punctata,exact
+HLdasNov4,Dasypus novemcinctus,Dasypus_novemcinctus,exact
+HLdelLeu4,Delphinapterus leucas,Delphinapterus_leucas,exact
+HLdidVir1,Didelphis virginiana,Didelphis_virginiana,exact
+HLdipMer1,Dipodomys merriami,Dipodomys_merriami,exact
+HLdipSpe1,Dipodomys spectabilis,Dipodomys_spectabilis,exact
+HLdroGli1,Dromiciops gliroides,Dromiciops_gliroides,exact
+HLdugDug2,Dugong dugon,Dugong_dugon,exact
+HLeleMax2,Elephas maximus indicus,Elephas_maximus,subspecies matched to its species
+enhLutKen1,Enhydra lutris kenyoni,Enhydra_lutris,subspecies matched to its species
+HLeptFus3,Eptesicus fuscus,Eptesicus_fuscus,exact
+HLequAsiAsi2,Equus asinus asinus,Equus_africanus,"donkey, listed under its wild ancestor"
+equCab3,Equus caballus,Equus_caballus,exact
+HLeriEur3,Erinaceus europaeus,Erinaceus_europaeus,exact
+HLescRob3,Eschrichtius robustus,Eschrichtius_robustus,exact
+HLeumJub1,Eumetopias jubatus,Eumetopias_jubatus,exact
+felCat9,Felis catus,Felis_catus,exact
+HLgalSen1,Galago senegalensis,Galago_senegalensis,exact
+HLgirCamAnt3,Giraffa camelopardalis antiquorum,Giraffa_camelopardalis,subspecies matched to its species
+HLgliGli1,Glis glis,Glis_glis,exact
+HLgorGor7,Gorilla gorilla,Gorilla_gorilla,exact
+HLhalGry2,Halichoerus grypus,Halichoerus_grypus,exact
+HLhetGla3,Heterocephalus glaber,Heterocephalus_glaber,exact
+HLhetBru2,Heterohyrax brucei,Heterohyrax_brucei,exact
+HLhipAmp4,Hippopotamus amphibius,Hippopotamus_amphibius,exact
+hg38,Homo sapiens,Homo_sapiens,exact
+HLhydHyd1,Hydrochoerus hydrochaeris,Hydrochoerus_hydrochaeris,exact
+HLiniGeo2A,Inia geoffrensis,Inia_geoffrensis,exact
+HLlepWed2,Leptonychotes weddellii,Leptonychotes_weddellii,exact
+HLloxAfr5A,Loxodonta africana,Loxodonta_africana,exact
+HLmacFas7,Macaca fascicularis,Macaca_fascicularis,exact
+HLmacFus1,Macaca fuscata,Macaca_fuscata,exact
+rheMac10,Macaca mulatta,Macaca_mulatta,exact
+macNem1,Macaca nemestrina,Macaca_nemestrina,exact
+HLmacGig1,Macropus giganteus,Macropus_giganteus,exact
+HLmadKir1,Madoqua kirkii,Madoqua_kirkii,exact
+HLmanSph3,Mandrillus sphinx,Mandrillus_sphinx,exact
+HLmanPen4,Manis pentadactyla,Manis_pentadactyla,exact
+HLmarMon3,Marmota monax,Marmota_monax,exact
+HLmarMat1,Martes martes,Martes_martes,exact
+HLmarZib1,Martes zibellina,Martes_zibellina,exact
+HLmegNov2,Megaptera novaeangliae,Megaptera_novaeangliae,exact
+HLmesAur3,Mesocricetus auratus,Mesocricetus_auratus,exact
+HLmicMin1,Micromys minutus,Micromys_minutus,exact
+HLmicAgr2,Microtus agrestis,Microtus_agrestis,exact
+HLmicArv1,Microtus arvalis,Microtus_arvalis,exact
+HLmirAng2,Mirounga angustirostris,Mirounga_angustirostris,exact
+HLmolMol2,Molossus molossus,Molossus_molossus,exact
+HLmonMon1,Monodon monoceros,Monodon_monoceros,exact
+mm39,Mus musculus,Mus_musculus,exact
+HLmusNiv1,Mustela nivalis,Mustela_nivalis,exact
+HLmusFur2,Mustela putorius furo,Mustela_putorius,subspecies matched to its species
+HLmyoGla2,Myodes glareolus,Myodes_glareolus,exact
+HLmyoDau2,Myotis daubentonii,Myotis_daubentonii,exact
+HLmyoLuc2,Myotis lucifugus,Myotis_lucifugus,exact
+HLmyrFas1,Myrmecobius fasciatus,Myrmecobius_fasciatus,exact
+nanGal1,Nannospalax galili,Spalax_ehrenbergi,APPROXIMATE: genus Nannospalax is absent; placed at its species complex
+HLnasNar1,Nasua narica,Nasua_narica,exact
+HLneoVis2,Neovison vison,Neovison_vison,exact
+HLnotEug3,Notamacropus eugenii,Macropus_eugenii,genus Notamacropus is kept inside Macropus
+HLnycPro4,Nyctereutes procyonoides,Nyctereutes_procyonoides,exact
+HLnycCou2,Nycticebus coucang,Nycticebus_coucang,exact
+octDeg1,Octodon degus,Octodon_degus,exact
+HLodoRos1,Odobenus rosmarus,Odobenus_rosmarus,exact
+HLodoHem1,Odocoileus hemionus hemionus,Odocoileus_hemionus,subspecies matched to its species
+HLondZib1,Ondatra zibethicus,Ondatra_zibethicus,exact
+HLonyLeu1,Onychomys leucogaster,Onychomys_leucogaster,exact
+HLorcOrc3,Orcinus orca,Orcinus_orca,exact
+HLornAna4,Ornithorhynchus anatinus,Ornithorhynchus_anatinus,exact
+HLoryCunCun4,Oryctolagus cuniculus cuniculus,Oryctolagus_cuniculus,subspecies matched to its species
+HLospRuf1,Osphranter rufus,Macropus_rufus,genus Osphranter is kept inside Macropus
+HLotoCra2,Otolemur crassicaudatus,Otolemur_crassicaudatus,exact
+HLoviMos1,Ovibos moschatus,Ovibos_moschatus,exact
+HLoviAri6,Ovis aries,Ovis_aries,exact
+HLoviCan2,Ovis canadensis,Ovis_canadensis,exact
+HLpanPan4,Pan paniscus,Pan_paniscus,exact
+HLpanTro7,Pan troglodytes,Pan_troglodytes,exact
+panHod1,Pantholops hodgsonii,Pantholops_hodgsonii,exact
+HLpapAnu6,Papio anubis,Papio_anubis,exact
+HLperManSon3,Peromyscus maniculatus sonoriensis,Peromyscus_maniculatus,subspecies matched to its species
+HLphaTap1,Phascogale tapoatafa,Phascogale_tapoatafa,exact
+HLphaCin1,Phascolarctos cinereus,Phascolarctos_cinereus,exact
+HLphoVit1,Phoca vitulina,Phoca_vitulina,exact
+HLphyHas1,Phyllostomus hastatus,Phyllostomus_hastatus,exact
+HLpotFla1,Potos flavus,Potos_flavus,exact
+HLpseCra1,Pseudorca crassidens,Pseudorca_crassidens,exact
+HLpteRod1,Pteropus rodricensis,Pteropus_rodricensis,exact
+HLranTarGra2,Rangifer tarandus granti,Rangifer_tarandus,subspecies matched to its species
+HLratNor8,Rattus norvegicus,Rattus_norvegicus,exact
+HLrouAeg4,Rousettus aegyptiacus,Rousettus_aegyptiacus,exact
+HLsagOed1,Saguinus oedipus,Saguinus_oedipus,exact
+HLsaiBolBol3,Saimiri boliviensis boliviensis,Saimiri_boliviensis,subspecies matched to its species
+HLsaiSci1,Saimiri sciureus,Saimiri_sciureus,exact
+HLsarHar2,Sarcophilus harrisii,Sarcophilus_harrisii,exact
+HLsciCar1,Sciurus carolinensis,Sciurus_carolinensis,exact
+HLsetBra1,Setonix brachyurus,Setonix_brachyurus,exact
+HLsorAra3,Sorex araneus,Sorex_araneus,exact
+HLsorCin1,Sorex cinereus,Sorex_cinereus,exact
+HLsunEtr1,Suncus etruscus,Suncus_etruscus,exact
+susScr11,Sus scrofa,Sus_scrofa,exact
+HLsylFlo1,Sylvilagus floridanus,Sylvilagus_floridanus,exact
+HLtacAcu2,Tachyglossus aculeatus,Tachyglossus_aculeatus,exact
+HLtalEur1B,Talpa europaea,Talpa_europaea,exact
+HLtamSib1,Tamias sibiricus,Tamias_sibiricus,exact
+HLtaxTax1,Taxidea taxus jeffersonii,Taxidea_taxus,subspecies matched to its species
+HLtriManLat2,Trichechus manatus,Trichechus_manatus,exact
+HLtriVul2,Trichosurus vulpecula,Trichosurus_vulpecula,exact
+HLturTru5,Tursiops truncatus,Tursiops_truncatus,exact
+HLuroPar1,Urocitellus parryii,Urocitellus_parryii,exact
+HLuroBil1,Uroderma convexum,Uroderma_bilobatum,split from U. bilobatum after this tree was built
+HLursAme3,Ursus americanus,Ursus_americanus,exact
+HLursArc2,Ursus arctos,Ursus_arctos,exact
+HLursMar2,Ursus maritimus,Ursus_maritimus,exact
+HLvomUrs1,Vombatus ursinus,Vombatus_ursinus,exact
+HLvulLag2,Vulpes lagopus,Vulpes_lagopus,exact
+HLvulVul2,Vulpes vulpes,Vulpes_vulpes,exact
+HLvulZer1,Vulpes zerda,Vulpes_zerda,exact
+HLzalCal1,Zalophus californianus,Zalophus_californianus,exact

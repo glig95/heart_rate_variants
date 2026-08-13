@@ -1,0 +1,78 @@
+name: Build the Windows application
+
+# Builds HeartRateVariants.exe on a real Windows machine and attaches it to a
+# release. A Windows program cannot be built from macOS or Linux, so this is how
+# the released .exe is made.
+#
+# It runs when a tag beginning with v is pushed, for example:
+#     git tag v1.0.0
+#     git push origin v1.0.0
+#
+# It can also be started by hand from the Actions tab, which builds the .exe and
+# leaves it as a downloadable artifact without making a release.
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write        # needed to attach the built file to the release
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install what the program needs
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build the application
+        run: pyinstaller hrv_variants.spec --noconfirm
+
+      - name: Check that the build produced something runnable
+        run: |
+          if (-not (Test-Path "dist\HeartRateVariants\HeartRateVariants.exe")) {
+            throw "The executable was not produced."
+          }
+          if (-not (Test-Path "dist\HeartRateVariants\data\species_info.csv")) {
+            throw "The data folder was not copied beside the executable."
+          }
+          Get-ChildItem dist\HeartRateVariants | Select-Object Name, Length
+
+      - name: Package it up
+        run: |
+          Compress-Archive -Path dist\HeartRateVariants `
+                           -DestinationPath HeartRateVariants-windows.zip
+
+      - name: Keep it as a downloadable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HeartRateVariants-windows
+          path: HeartRateVariants-windows.zip
+          retention-days: 30
+
+      - name: Attach it to the release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: HeartRateVariants-windows.zip
+          body: |
+            Download `HeartRateVariants-windows.zip`, extract it, and
+            double-click `HeartRateVariants.exe`. No Python needed.
+
+            Windows may show a "Windows protected your PC" box the first time,
+            because the application is not signed. Click **More info**, then
+            **Run anyway**.

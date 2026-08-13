@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: hrv_variants
+message: >-
+  If you use this software, please cite it using the metadata in this file, and
+  cite the methods papers listed in the README alongside it.
+type: software
+authors:
+  - name: The hrv_variants authors
+repository-code: "https://github.com/glig95/heart_rate_variants"
+abstract: >-
+  Finds amino-acid variants in cardiac ion-channel genes associated with resting
+  heart rate across mammals. Three methods are implemented: phylogenetic
+  generalized least squares, a clade-sharing test that uses only comparisons made
+  within groups of related species, and a gradient-boosted tree model. The
+  program has a window, so no code has to be written to use it.
+keywords:
+  - comparative genomics
+  - phylogenetic comparative methods
+  - heart rate
+  - ion channels
+  - mammals
