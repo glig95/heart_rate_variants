@@ -5,7 +5,12 @@ The program reads DNA alignments of a set of coding DNA sequences, finds which a
 each species carries at each position, constructs a matrix of all variants, and then searches for
 variants that are associated with a faster or a slower heart rate.
 
-Three methods for finding genetic variants are included: 1) phylogenetic regression as an established inference method in phylogenetics, 2) a new, rationally constructed clade-sharing method, and 3) a machine learning method called XGBoost. All three are explained in greater detail below.
+Three methods for finding genetic variants are included: 
+1) phylogenetic regression as an established inference method in phylogenetics, 
+2) a new, rationally constructed clade-sharing method, and 
+3) a machine learning method called XGBoost. 
+
+All three are explained in greater detail below.
 
 Data needed to run the code is available in the repository. This includes the gene alignments, the
 species table with heart rates and body masses, and the mammalian tree.
