@@ -67,38 +67,29 @@ python run_gui.py
 
 ---
 
-## Running it
+## Running the program
 
-A window opens with three tabs. First, check the data setting tab, then the method
-setting tab, and finally press **Run the analysis** button.
-A run takes about thirty seconds; XGBoost takes a few minutes,
-because it searches for its own optimal settings.
+After running the GUI, a window with three tabs will open.
+First, check the data setting tab, then the method setting tab, and finally press **Run the analysis** button.
+A run should take about thirty seconds; XGBoost takes a few minutes, because it searches for its own optimal settings.
 
----
-
-## What the window does
-
-Three tabs. The window opens in dark mode; the switch in the top right changes
-it. Beside it, **How to use the program** opens a page of plain text. A second help button,
-**How the p-value is worked out**, opens from the p-value column heading on the Results
-tab, and one about **share explained** from that column's heading.
+Tabs:
 
 **Data settings.** Where the input files are, and the two rules that decide which
 positions in a protein count as a variant: how many species must carry it, and
-how many must have been sequenced there. Also which tree, and what to do with
-species that have no amino acid called.
+how many must have been sequenced there. Also which tree to use, and what to do with
+species that have no amino acid identified.
 
 **Method settings.** Which of the four methods to run, whether body mass is
 treated as a confounder, how clades are defined, and what counts as a result. The
 Run button is here.
 
-**Results.** Fills in after a run: the variants in a table, and every figure the
-run produced, which takes most of the tab. Clicking a row opens that variant's
-figure. The **share explained** and **p-value** column headings carry a question
+**Results.** Fills in after a run: variants are summarized in a table, and
+figures. Clicking a row opens that variant's figure. 
+The **share explained** and **p-value** column headings carry a question
 mark; clicking either opens a page explaining that number.
 
-The log along the bottom fills up while a run is going, and **Stop** interrupts
-it cleanly.
+The log along the bottom fills up while a run is going, and **Stop** interrups it.
 
 ---
 
@@ -139,12 +130,10 @@ leaves residuals that are independent and equally variable, so ordinary least
 squares on the transformed data is the generalized least-squares fit of the
 original.
 
-**Output.** The change in heart rate in carriers as a percentage with a
-95% range; the squared phylogeny-corrected partial correlation, which is the
+**Output.** The change in heart rate in carriers as a percentage; 
+the squared phylogeny-corrected partial correlation, which is the
 share of the variation in heart rate the variant accounts for; and a p-value from
-the t-test on the slope, with degrees of freedom equal to the number of
-independent observations minus two, minus one more if the body-mass effect was
-removed first.
+the t-test.
 
 **References.**
 
