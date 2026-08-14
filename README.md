@@ -263,14 +263,9 @@ mass to the power of about -0.19. A variant that is simply commoner in small
 animals will therefore look associated with a fast heart for that reason alone.
 
 Ticking **Treat body mass as a confounder** removes the body-mass effect from
-heart rate before any variant is tested. A straight line is fitted through the
-species, log10 heart rate against log10 body mass, and what each species has left
-over is handed to whichever method is running. There is no phylogeny in this step:
-it is an ordinary least-squares fit across species, and the tree plays no part in
-measuring the slope. The tree is used afterwards, by the methods that need it. All
-three methods therefore see the same adjusted numbers and answer the same question:
-does this variant go with a heart beating faster or slower than the animal's size
-predicts?
+heart rate before any variant is tested. The residuals of heart rate are calculated
+by performing a linear fit in log-log coordinates, and what each species has left
+over is used as a normalized heart rate variability and as an input to the three predictors.
 
 Body mass is read from the `body_mass_g` column of `data/species_info.csv`, the
 same file the heart rates and the species names come from.
