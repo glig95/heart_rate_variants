@@ -24,10 +24,9 @@ species table with heart rates and body masses, and the mammalian tree.
 
 ### Windows
 
-For Windows there is a ready-built application on the
-[Releases page](https://github.com/glig95/heart_rate_variants/releases) that
-needs no Python at all.
-Download `HeartRateVariants-windows.zip` from the
+For Windows there is a ready-built application at
+does not rewuire python.
+To access it, download `HeartRateVariants-windows.zip` from the
 [Releases page](https://github.com/glig95/heart_rate_variants/releases), extract
 it, and double-click `HeartRateVariants.exe`.
 
