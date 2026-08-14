@@ -15,6 +15,7 @@ All three are explained in greater detail below.
 Data needed to run the code is available in the repository. This includes the gene alignments, the
 species table with heart rates and body masses, and the mammalian tree.
 
+Navigation:
 * **[Installation](#Installation)**
 * **[How to use the program](#Using-the-program)**
 * **[Summary of the methods](#Description-of-the-methods)**
