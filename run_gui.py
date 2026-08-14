@@ -10,6 +10,7 @@ If that says a package is missing, install the requirements first:
     pip install -r requirements.txt
 """
 
+import multiprocessing
 import sys
 from pathlib import Path
 
@@ -43,4 +44,15 @@ def main():
 
 
 if __name__ == "__main__":
+    # This has to come first, before anything else runs.
+    #
+    # Starting a second process on Windows and macOS means starting this program
+    # again. Run from the source that is harmless, because the second copy is
+    # imported rather than run and the line above stops it reaching main(). Run
+    # from the packaged application it is not harmless: what gets started again
+    # is the application, so every worker opened a window of its own and the run
+    # sat there waiting for windows nobody knew to close. freeze_support() makes
+    # the second copy recognize itself as a worker and get on with the work
+    # instead of opening a window.
+    multiprocessing.freeze_support()
     sys.exit(main())
