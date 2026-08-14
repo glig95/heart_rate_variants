@@ -71,7 +71,7 @@ python run_gui.py
 
 ---
 
-## Running the program
+## Using the program
 
 After running the GUI, a window with three tabs will open.
 First, check the data setting tab, then the method setting tab, and finally press **Run the analysis** button.
@@ -97,7 +97,7 @@ The log along the bottom fills up while a run is going, and **Stop** interrups i
 
 ---
 
-## The methods
+## Description of the methods
 
 PGLS and the clade-sharing method are statistical tests, which test one variant at
 a time, and assign a p-value to each. XGBoost is a machine learning model that ranks
@@ -173,7 +173,7 @@ which can be intuitively grasped and manually checked, which is harder for PGLS:
    it causes a shift in heart rate compared to non-carriers?
 2. Does it have the same effect in several clades?
 
-**Detailed description of clade-sharing**
+**Description of the algorithm**
 
 1. Every species is assigned to a clade. By default the clade is the taxonomic
    order from the species file, meaning, *Rodentia*, *Chiroptera*, *Primates* and so
