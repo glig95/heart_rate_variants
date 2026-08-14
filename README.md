@@ -1,4 +1,4 @@
-# hrv_variants
+# Genetic predictors of adult heart rate
 
 This repo contains code for identifying genetic variants linked to heart rate variability across mammals.
 The program reads DNA alignments of a set of coding DNA sequences, finds which amino acid
