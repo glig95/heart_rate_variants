@@ -14,6 +14,7 @@ was produced and where it is.
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 import os
+import sys
 import numpy as np
 import pandas as pd
 
@@ -235,6 +236,24 @@ def _draw_variant_plots(dataset, hits, clade_labels, folder, say):
             list(dataset.species),
         ))
 
+    def one_at_a_time():
+        for done, job in enumerate(jobs, start=1):
+            plots.draw_variant_detail_job(job)
+            if done % 10 == 0 or done == len(jobs):
+                say(f"  {done} of {len(jobs)} figures drawn")
+
+    # A packaged application draws them one at a time. Several processes means
+    # starting the program again, and for a packaged application the program is
+    # the application, so the workers each opened a window and the run stopped
+    # until somebody closed them. run_gui.py calls freeze_support(), which is the
+    # supported repair for that, but a packaged application cannot be tested from
+    # the machine this was written on, so the risk is simply not taken. Drawing
+    # fifteen figures one at a time takes about seven seconds.
+    if getattr(sys, "frozen", False):
+        say(f"Drawing {len(jobs)} variant figures")
+        one_at_a_time()
+        return
+
     workers = max(1, min(os.cpu_count() or 2, 8))
     say(f"Drawing {len(jobs)} variant figures using {workers} processes")
     try:
@@ -244,10 +263,7 @@ def _draw_variant_plots(dataset, hits, clade_labels, folder, say):
                     say(f"  {done} of {len(jobs)} figures drawn")
     except Exception:
         say("Drawing the figures one at a time")
-        for done, job in enumerate(jobs, start=1):
-            plots.draw_variant_detail_job(job)
-            if done % 10 == 0 or done == len(jobs):
-                say(f"  {done} of {len(jobs)} figures drawn")
+        one_at_a_time()
 
 
 def _relabeling_summary(dataset, prepared, settings):

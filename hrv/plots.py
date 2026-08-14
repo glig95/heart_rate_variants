@@ -29,7 +29,9 @@ REFERENCE_SPECIES = {
     "HLcerSimCot2": "rhinoceros",
     "hg38": "human",
     "mm39": "mouse",
-    "HLsorAra3": "shrew",
+    # Suncus etruscus, the Etruscan shrew: 2.1 grams and 835 beats per minute,
+    # the fastest heart of any mammal, which is what makes it worth marking.
+    "HLsunEtr1": "Etruscan shrew",
 }
 
 
