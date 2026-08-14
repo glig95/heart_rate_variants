@@ -6,7 +6,7 @@ each species carries at each position, constructs a matrix of all variants, and 
 variants that are associated with a faster or a slower heart rate.
 
 Three methods for finding genetic variants are included: 
-1) phylogenetic regression as an established inference method in phylogenetics, 
+1) phylogenetic generalized least squares as an established statistical regression method, 
 2) a new, rationally constructed clade-sharing method, and 
 3) a machine learning method called XGBoost. 
 
