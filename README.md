@@ -390,8 +390,3 @@ Input needed to run the pipeline is in `data/`.
   *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge
   Discovery and Data Mining*, 785–794.
   [doi:10.1145/2939672.2939785](https://doi.org/10.1145/2939672.2939785)
-
-The clade-sharing method has no reference of its own, because it is not a
-published named method. It is a within-group regression with clade as the
-grouping factor, which is standard, applied to the phylogenetic problem in the
-way described above.
