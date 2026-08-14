@@ -166,11 +166,11 @@ The clade-sharing method is developed specifically for this dataset, inspired by
 observation that a variant can have the same effect across different clades
 of animals.
 Specifically, it systematically searches for variants that are associated with
-a change in heart rate, in lineages that acquired it separately.
+a change in heart rate, in lineages that acquired them separately.
 
 **How is this different from PGLS.** It is similar, but unlike PGLS, it does not
 depend on the tree. It is formulated to find variants that satisfy the following criteria,
-which can be intuitively grasped and manually checked, which is harder for PGLS:
+that can be intuitively grasped and manually checked, which is harder for PGLS:
 
 1. Is the variant present in only some species of a clade, and in those species (carriers)
    it causes a shift in heart rate compared to non-carriers?
@@ -207,8 +207,8 @@ r      =  correlation( y* , x* )   over the species in contrast clades
 the shared ancestry of animals within the clade. However, this means that
 two sister species in the same order are treated as two independent comparisons
 even though they are not fully independent. PGLS does not make this assumption
-but requires a tree, pointing to trade-offs that have to be made. This is the main reason to
-run PGLS alongside clade-sharing to verify how much they correlate.
+but is sensitive to the quantitities in the phylogenetic tree, pointing to trade-offs that have to be made. 
+
 
 **Input: the number of contrast clades required.** This is set on the Method settings
 tab and the default is one, which means any variant with at least one usable
@@ -235,8 +235,12 @@ all predictable given the genomic data. It fits many decision tree models from a
 at once, keeps the most accurate, and lists the variants that the model made most
 use of. It does not account for the phylogeny at all, so a variant can score highly
 simply because it marks a group of relatives who happen to share a heart rate.
-It outputs variant's importance rather than a p-value: importance says how much a
-variant improved the model's fit.
+Namely, it's possible that ancestry can be reconstructed based on sequences and 
+the heart rate reconstructed from relatedness, which reduces the probability 
+of identified variants being causal for the heart rate.
+The program outputs variant's importance rather than a p-value: importance says how much a
+variant improved the model's fit. Specifically the importance is defined as a drop 
+in accuracy of the model trained on a dataset with that variant removed.
 
 **Input.** The algorithm performs grid search over hyperparameters, so there
 is no user input required here. Varied parameters are: the number of trees, tree depth,
